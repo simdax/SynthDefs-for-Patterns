@@ -9,11 +9,11 @@ SynthDef("marimba1", {arg freq = 440, amp = 0.4;
 }).add;
 )
 
-(
-Pbind(
-	\instrument, "marimba1",
-	\degree, Pwhite(-10, 10),
-	\dur, Pwhite(0.2, 0.3),
-	\amp, Pwhite(0.1, 0.5)
-).play;
-)
+// (
+// Pbind(
+// 	\instrument, "marimba1",
+// 	\degree, Pwhite(-10, 10),
+// 	\dur, Pwhite(0.2, 0.3),
+// 	\amp, Pwhite(0.1, 0.5)
+// ).play;
+// )

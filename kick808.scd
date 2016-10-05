@@ -11,12 +11,12 @@ SynthDef("kick808", {arg out = 0, freq1 = 240, freq2 = 60, amp = 1, ringTime = 1
 }).add;
 
 
-(
-Pbind(
-	\instrument, "kick808",
-	\dur, 1/2,
-	\amp, 0.5,
-	\rel, 0.7,
-	\dist, 0.5
-).play;
-)
+// (
+// Pbind(
+// 	\instrument, "kick808",
+// 	\dur, 1/2,
+// 	\amp, 0.5,
+// 	\rel, 0.7,
+// 	\dist, 0.5
+// ).play;
+// )

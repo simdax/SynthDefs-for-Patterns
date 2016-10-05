@@ -58,11 +58,11 @@ SynthDef("waveguideFlute", { arg scl = 0.2, freq = 440, ipress = 0.9, ibreath = 
 
 
 // Example
-(
-Pbind(
-	\instrument, "waveguideFlute",
-	\degree, Pseq([0, 1, 2, 3, 4], 2),
-	\dur, Pwhite(0.5, 1),
-	\amp, Pwhite(0.1, 0.4)
-).play
-)
+// (
+// Pbind(
+// 	\instrument, "waveguideFlute",
+// 	\degree, Pseq([0, 1, 2, 3, 4], 2),
+// 	\dur, Pwhite(0.5, 1),
+// 	\amp, Pwhite(0.1, 0.4)
+// ).play
+// )

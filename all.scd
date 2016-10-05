@@ -1,3 +1,5 @@
+(
+
 SynthDef("PMCrotale", {
 arg freq = 261, tone = 3, art = 1, amp = 0.8, pan = 0;
 var env, out, mod;
@@ -168,4 +170,6 @@ x = Synth.new("hihat");
 x = Synth.new("snare");
 x = Synth.new("kick");
 x = Synth.new("kick2");
-*/
+	*/
+
+)

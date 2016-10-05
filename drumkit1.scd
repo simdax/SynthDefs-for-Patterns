@@ -26,27 +26,27 @@ SynthDef("kick", {arg out = 0, amp = 0.3, sinfreq = 60, glissf = 0.9, att = 0.01
 
 
 // Example
-(
-Ppar([
-	Pbind(
-		\instrument, "hihat",
-		\dur, Pseq([Rest(1/4), 1/4], inf),
-		\ffreq, 9000,
-		\rel, 0.1,
-		\amp, 0.2
-	),
-	Pbind(
-		\instrument, "kick",
-		\dur, 1/2,
-		\amp, 0.9,
-		\rel, 0.12,
-		\glissf, 0.99
-	),
-		Pbind(
-		\instrument, "snare",
-		\dur, Pseq([Rest(1/2), 1/2], inf),
-		\amp, 0.25,
-		\rel, 0.1
-	)
-]).play;
-)
+// (
+// Ppar([
+// 	Pbind(
+// 		\instrument, "hihat",
+// 		\dur, Pseq([Rest(1/4), 1/4], inf),
+// 		\ffreq, 9000,
+// 		\rel, 0.1,
+// 		\amp, 0.2
+// 	),
+// 	Pbind(
+// 		\instrument, "kick",
+// 		\dur, 1/2,
+// 		\amp, 0.9,
+// 		\rel, 0.12,
+// 		\glissf, 0.99
+// 	),
+// 		Pbind(
+// 		\instrument, "snare",
+// 		\dur, Pseq([Rest(1/2), 1/2], inf),
+// 		\amp, 0.25,
+// 		\rel, 0.1
+// 	)
+// ]).play;
+// )

@@ -8,17 +8,17 @@ SynthDef("blips1", {arg out = 0, freq = 25, numharm = 10, att = 0.01, rel = 1, a
 )
 
 
-(
-Pbind(
-	\instrument, "blips1",
-	\degree, Pwhite(0, 10),
-	\dur, 0.2,
-	\amp, Pwhite(0.01, 0.05),
-	\numharm, Pwhite(10, 20),
-	\att, 0.01,
-	\rel, Pwhite(0.5, 0.8),
-	\pan, Pwhite(-1, 1.0)
-).play;
-)
+// (
+// Pbind(
+// 	\instrument, "blips1",
+// 	\degree, Pwhite(0, 10),
+// 	\dur, 0.2,
+// 	\amp, Pwhite(0.01, 0.05),
+// 	\numharm, Pwhite(10, 20),
+// 	\att, 0.01,
+// 	\rel, Pwhite(0.5, 0.8),
+// 	\pan, Pwhite(-1, 1.0)
+// ).play;
+// )
 
 

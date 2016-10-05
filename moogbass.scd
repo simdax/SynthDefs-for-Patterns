@@ -9,6 +9,7 @@ under GNU GPL 3 as per SuperCollider license
 Minor SynthDef modifications by Bruno Ruviaro, June 2015.
 */
 
+(
 SynthDef("moogbass", {
 	arg out = 0, pan = 0, freq = 440, amp = 0.1, gate = 1, cutoff = 1000, gain = 2.0, lagamount = 0.01, att = 0.001, dec = 0.3, sus = 0.9, rel = 0.2, chorus = 0.7;
 
@@ -58,16 +59,16 @@ SynthDef("moogbass", {
 )
 
 
-loadRelative("utilities.scd");
+// loadRelative("utilities.scd");
 
-~addSynthDemo.value("moogbass",
-	Pmono(
-		"moogbass",
-		\amp, 0.5,
-		\midinote, Pseq([24, 36, 48, 36, 35, 36, 43, 48],inf),
-		\dur, Pstutter(8, Pseq([0.5, 0.25], inf)),
-		\gain, Pn(Pseries(2, 0.1, 19),inf),
-		\cutoff, Pn(Pseries(4000, 400, 18), inf),
-		\chorus, 0.7
-	);
-)
+// ~addSynthDemo.value("moogbass",
+// 	Pmono(
+// 		"moogbass",
+// 		\amp, 0.5,
+// 		\midinote, Pseq([24, 36, 48, 36, 35, 36, 43, 48],inf),
+// 		\dur, Pstutter(8, Pseq([0.5, 0.25], inf)),
+// 		\gain, Pn(Pseries(2, 0.1, 19),inf),
+// 		\cutoff, Pn(Pseries(4000, 400, 18), inf),
+// 		\chorus, 0.7
+// 	);
+// )
